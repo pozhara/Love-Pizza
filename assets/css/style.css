@@ -14,12 +14,15 @@ body {
   padding:0px;
   overflow-x:hidden;
 }
+html{
+  background-color:hsl(27,66%,92%);
+}
 
 /*Styling the header*/
 #logo {
   float: left;
   font-size: 150%;
-  margin-left: 30px;
+  margin-left: 50px;
 }
 
 #navigation {
@@ -30,6 +33,7 @@ body {
   float: right;
   list-style-type: none;
   margin-right: 20px;
+  margin-top:10px;
 }
 
 #navigation a {
@@ -48,4 +52,50 @@ body {
 
 .clear-both {
   clear: both;
+}
+img{
+  height:100px;
+}
+
+/* Styling our values section*/
+#ourvalues{
+  clear:both;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+  padding-bottom: 10px;
+}
+#ourvalues h2{
+  text-align:center;
+  margin-bottom:20px;
+}
+
+#comfort {
+  width: 33%;
+  background-color: white;
+  float: left;
+  height:150px;
+}
+#comfort p,h3{
+  margin-top:20px;
+}
+
+#dogs {
+  width: 33%;
+  display: inline-block;
+  height:150px;
+  background-color:hsl(186,34%,77%);
+}
+#dogs p, #dogs h3{
+  margin-top:20px;
+}
+
+#child {
+  width: 33%;
+  background-color:hsl(7,99%,75%);
+  float:right;
+  height:150px;
+}
+#child p, h3{
+  margin-top:20px;
 }
