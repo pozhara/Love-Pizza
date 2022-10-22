@@ -99,3 +99,7 @@ img{
 #child p, h3{
   margin-top:20px;
 }
+.heading{
+  text-align:center;
+  margin-bottom:20px;
+}
