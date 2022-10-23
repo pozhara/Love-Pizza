@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Love Pizza</title>
     <link href="/assets/css/style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/43bd796c99.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -15,8 +16,8 @@
         <nav id="navigation">
             <ul>
                 <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="#game">Free Pizza</a></li>
-                <li><a href="#menu">Menu</a></li>
+                <li><a href="#freepizza">Free Pizza</a></li>
+                <li><a href="#ourmenu">Menu</a></li>
                 <li><a href="#ourvalues">Our Values</a></li>
             </ul>
         </nav>
@@ -36,13 +37,10 @@
             <p>We have a playground where you child can hang out with their peers while waiting for food.</p>
         </div>
     </div>
-    <section id="menu" class="menu">
-        <h3 class="heading">Our <span>menu</span></h3>
+    <h2 class="menu" id="ourmenu">Our Menu</h2>
+    <section id="menu">
         <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <i class="fa-regular fa-pizza"></i>
-                </div>
+            <div id="box1">
                 <div class="image">
                     <img src="assets/images/pepperoni1.webp" alt="pepperoni pizza">
                 </div>
@@ -60,10 +58,7 @@
             </div>
         </div>
         <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <i class="fa-regular fa-pizza"></i>
-                </div>
+            <div id="box2">
                 <div class="image">
                     <img src="assets/images/hawaiian1.jpg" alt="hawaiian pizza">
                 </div>
@@ -81,12 +76,9 @@
             </div>
         </div>
         <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <i class="fa-regular fa-pizza"></i>
-                </div>
+            <div id="box3">
                 <div class="image">
-                    <img src="assets/images/margarita.jpg" alt="margherita pizza">
+                    <img src="assets/images/margherita.jpg" alt="margherita pizza">
                 </div>
                 <div class="content">
                     <h4>Margherita</h4>
@@ -102,10 +94,7 @@
             </div>
         </div>
         <div class="box-container">
-            <div class="box">
-                <div class="icons">
-                    <i class="fa-regular fa-pizza"></i>
-                </div>
+            <div id="box4">
                 <div class="image">
                     <img src="assets/images/buffalo.jpg" alt="hawaiian pizza">
                 </div>
@@ -122,12 +111,14 @@
                 <div class="price">$14.99 <span>$19.99</span></div>
             </div>
         </div>
+        <p id="visit">And much more! Give us a visit and see for yourself!</p>
     </div>
+    <h2 id="freepizza">Free Pizza</h2>
+    <p id="pfree">We give out a free pizza of your choice (Pepperoni, Hawaiian, Margherita or Buffalo) to people who win this game. You only have one chance to win. Don't waste it!</p>
+    <img src="assets/images/woman.jpg" alt="A woman eating pizza" id="woman">
     <div id="game">
-
     </div>
     <div id="contact-us">
-
     </div>
     <script src="/assets/js/index.js"></script>
 </body>

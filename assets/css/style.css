@@ -99,7 +99,62 @@ img{
 #child p, h3{
   margin-top:20px;
 }
-.heading{
+.menu{
   text-align:center;
   margin-bottom:20px;
+  margin-top:20px;
+}
+#menu{
+  width:90%;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  grid-gap:20px;
+  grid-template-areas:'a b c d'
+  'e e e e'
+  'f f f f'
+  'g g h h'
+  'g g h h';
+}
+#box1{
+  grid-area:a;
+  border:1px solid hsl(7,99%,75%);
+  text-align:center;
+}
+#box2{
+  grid-area:b;
+  border:1px solid hsl(7,99%,75%);
+  text-align:center;
+}
+#box3{
+  grid-area:c;
+  border:1px solid hsl(7,99%,75%);
+  text-align:center;
+}
+#box4{
+  grid-area:d;
+  border:1px solid hsl(7,99%,75%);
+  text-align:center;
+}
+span{
+  text-decoration: line-through;
+}
+#visit{
+  grid-area:e;
+  text-align:center;
+}
+#freepizza{
+  grid-area:f;
+  text-align:center;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+#pfree{
+  grid-area:g;
+  font-size:20px;
+  margin-top:20px;
+}
+#woman{
+  grid-area:h;
+  height:350px;
 }
