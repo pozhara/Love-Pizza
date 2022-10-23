@@ -1,9 +1,7 @@
-// Complete logic of game inside this function
 const game = () => {
     let playerScore = 0;
     let computerScore = 0;
     let moves = 0;
- 
  
     // Function to
     const playGame = () => {
@@ -20,8 +18,6 @@ const game = () => {
                 const movesLeft = document.querySelector('.movesleft');
                 moves++;
                 movesLeft.innerText = `Moves Left: ${10-moves}`;
-                 
- 
                 const choiceNumber = Math.floor(Math.random()*3);
                 const computerChoice = computerOptions[choiceNumber];
  
@@ -34,14 +30,13 @@ const game = () => {
                 }
             })
         })
-         
     }
  
     // Function to decide winner
     const winner = (player,computer) => {
-        const result = document.getElementsByClassName('.result');
-        const playerScoreBoard = document.getElementsByClassName('.p-count');
-        const computerScoreBoard = document.getElementsByClassName('.c-count');
+        const result = document.querySelector('.result');
+        const playerScoreBoard = document.querySelector('.p-count');
+        const computerScoreBoard = document.querySelector('.c-count');
         player = player.toLowerCase();
         computer = computer.toLowerCase();
         if(player === computer){
@@ -87,12 +82,12 @@ const game = () => {
     const gameOver = (playerOptions,movesLeft) => {
         const chooseMove = document.querySelector('.move');
         const result = document.querySelector('.result');
+        const reloadBtn = document.querySelector('.reload');
         playerOptions.forEach(option => {
             option.style.display = 'none';
         })
-        chooseMove.innerText = 'Game Over!!'
+        chooseMove.innerText = 'Game Over!'
         movesLeft.style.display = 'none';
- 
         if(playerScore > computerScore){
             result.style.fontSize = '2rem';
             result.innerText = 'You Won The Game'
@@ -110,10 +105,8 @@ const game = () => {
         }
     }
  
- 
     // Calling playGame function inside game
     playGame();
-     
 }
  
 // Calling the game function

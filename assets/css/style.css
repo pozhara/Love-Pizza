@@ -115,7 +115,8 @@ img{
   'f f f f'
   'g g h h'
   'g g h h'
-  'i i i i';
+  'i i i i'
+  'j j j j';
 }
 #box1{
   grid-area:a;
@@ -158,4 +159,10 @@ span{
 #woman{
   grid-area:h;
   height:350px;
+}
+#game{
+  grid-area:j;
+}
+.title{
+  text-align:center;
 }
