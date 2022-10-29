@@ -1,24 +1,27 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-  font-family:'Helvetica';
-  background-color:aliceblue;
-  color:rgb(6, 112, 147);
+
+body {
+  font-family: 'Helvetica';
+  background-color: aliceblue;
+  color: rgb(6, 112, 147);
 }
+
 html,
 body {
   height: 100%;
   width: 100%;
-  margin:0px;
-  padding:0px;
-  overflow-x:hidden;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
+
 /*Styling the header*/
-header{
-  grid-area:n;
+header {
+  grid-area: n;
 }
 
 #logo {
@@ -34,7 +37,7 @@ header{
   float: right;
   list-style-type: none;
   margin-right: 20px;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
 #navigation a {
@@ -54,78 +57,231 @@ header{
 .clear-both {
   clear: both;
 }
-img{
-  height:100px;
-}
-/*Styling ourvalues section*/
-#ourvalues{
-  width:90%;
-  margin:auto;
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
- 
-  grid-template-areas:'h h h'
-  'g c d';
-}
-#values-h{
-  grid-area:h;
-  text-align:center;
-  clear:both;
-  margin-bottom:15px;
-}
-#gelato{
-  grid-area:g;
-  background-color:white;
-  text-align:center;
-}
-#gelato img{
-  margin-top:10px;
-  margin-bottom:5px;
-}
-#gelato h2{
-  margin-bottom:5px;
+
+img {
+  height: 100px;
 }
 
-#coffee{
-  grid-area:c;
-  text-align:center;
-  background-color:rgb(249, 233, 213);
+/*Styling ourvalues section*/
+#ourvalues {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-areas: 'h h h'
+    'g c d';
 }
-#coffee img{
-  margin-top:10px;
-  margin-bottom:5px;
+
+#values-h {
+  grid-area: h;
+  text-align: center;
+  clear: both;
+  margin-bottom: 15px;
 }
-#coffee h2{
-  margin-bottom:5px;
+
+#gelato {
+  grid-area: g;
+  background-color: white;
+  text-align: center;
 }
-#comfort{
-  grid-area:d;
-  background-color:rgb(208, 237, 247);
-  text-align:center;
+
+#gelato img {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
-#comfort img{
-  margin-top:10px;
-  margin-bottom:5px;
+
+#gelato h2 {
+  margin-bottom: 5px;
 }
-#comfort h2{
-  margin-bottom:5px;
+
+#coffee {
+  grid-area: c;
+  text-align: center;
+  background-color: rgb(249, 233, 213);
 }
-#comfort h3{
-  margin-bottom:5px;
-  margin-left:3px;
-  margin-right:3px;
+
+#coffee img {
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
+
+#coffee h2 {
+  margin-bottom: 5px;
+}
+
+#comfort {
+  grid-area: d;
+  background-color: rgb(208, 237, 247);
+  text-align: center;
+}
+
+#comfort img {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+#comfort h2 {
+  margin-bottom: 5px;
+}
+
+#comfort h3 {
+  margin-bottom: 5px;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
 /*Styling quiz section*/
-#win{
+#win {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#rules {
+  font-size: 120%;
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+#start {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#start button {
+  font-size: 25px;
+  font-weight: 500;
+  background-color: white;
+  color: rgb(6, 112, 147);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+}
+
+#info-box {
+  display:none;
+  text-align: center;
+  width: 540px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  margin-top: 80px;
+}
+
+#info-title {
+  margin-bottom: 7px;
+  height: 60px;
+  width: 100%;
+  border-bottom: 1px solid rgb(208, 237, 247);
+  padding: 0 35px;
+  padding-top:20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.info {
+  margin: 5px;
+  font-size: 17px;
+}
+
+#info-list {
+  padding: 15px 35px;
+}
+#info-list span{
+  font-weight:600;
+}
+.buttons{
+  border-top:1px solid rgb(6, 112, 147);
+  height:50px;
+}
+.buttons button{
+  border-radius: 5px;
+  padding: 15px 30px;
+  cursor: pointer;
+  font-size:16px;
+  font-weight:500;
+  margin:5px 5px;
+  height:20px;
+}
+#quit{
+  background-color:white;
+  color:rgb(6, 112, 147);
+  border:1px solid rgb(6, 112, 147);
+}
+#quit:hover{
+  background-color:rgb(6, 112, 147);
+  color:white;
+  border:none;
+}
+#continue{
+  background-color:rgb(6, 112, 147);
+  color:white;
+  border:none;
+}
+#continue:hover{
+  background-color:rgb(6, 77, 99);
+}
+#quiz-box{
+  text-align: center;
+  width: 540px;
+  background-color: white;
+  border-radius: 5px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 5px;
+  margin-top: 80px;
+}
+#quiz-box header{
+  height:70px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-left:20px;
+  border-bottom: 1px solid rgb(6, 112, 147);
+  width:100%;
+}
+#quiz-box .title{
+  font-size:20px;
+  font-weight:500;
+}
+#quiz-box #timer{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:145px;
+  height:45px;
+  background:rgb(208, 237, 247);
+  border-radius:5px;
+  padding:0 8px;
+}
+#time-left-txt{
+  font-size:17px;
+  font-weight:400;
+  user-select: none;
+}
+#timer-sec{
+  font-size:18px;
+  font-weight:500;
+  background-color:rgb(6, 112, 147);
+  color:white;
+  height:30px;
+  width:45px;
   text-align:center;
-  margin-top:10px;
-  margin-bottom:10px;
+  line-height:30px;
+  border-radius:5px;
+  user-select: none;
 }
-#rules{
-  font-size:120%;
-  margin-left:15px;
-  margin-right:10px;
-}
+
 
 
 
@@ -142,9 +298,9 @@ img{
 
 #contact-us {
   text-align: center;
-  background-color: hsl(186,34%,77%);
+  background-color: hsl(186, 34%, 77%);
   width: 100%;
-  grid-area:k;
+  grid-area: k;
 }
 
 #contact-us li {
