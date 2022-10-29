@@ -5,6 +5,8 @@
 }
 body{
   font-family:'Helvetica';
+  background-color:aliceblue;
+  color:rgb(6, 112, 147);
 }
 html,
 body {
@@ -14,14 +16,13 @@ body {
   padding:0px;
   overflow-x:hidden;
 }
-html{
-  background-color:hsl(27,66%,92%);
+/*Styling the header*/
+header{
+  grid-area:n;
 }
 
-/*Styling the header*/
 #logo {
   float: left;
-  font-size: 150%;
   margin-left: 50px;
 }
 
@@ -56,113 +57,98 @@ html{
 img{
   height:100px;
 }
-
-/* Styling our values section*/
+/*Styling ourvalues section*/
 #ourvalues{
-  clear:both;
-  padding-top: 10px;
-  text-align: center;
-  width: 100%;
-  padding-bottom: 10px;
-}
-#ourvalues h2{
-  text-align:center;
-  margin-bottom:20px;
-}
-
-#comfort {
-  width: 33%;
-  background-color: white;
-  float: left;
-  height:150px;
-}
-#comfort p,h3{
-  margin-top:20px;
-}
-
-#dogs {
-  width: 33%;
-  display: inline-block;
-  height:150px;
-  background-color:hsl(186,34%,77%);
-}
-#dogs p, #dogs h3{
-  margin-top:20px;
-}
-
-#child {
-  width: 33%;
-  background-color:hsl(7,99%,75%);
-  float:right;
-  height:150px;
-}
-#child p, h3{
-  margin-top:20px;
-}
-.menu{
-  text-align:center;
-  margin-bottom:20px;
-  margin-top:20px;
-}
-#menu{
   width:90%;
   margin:auto;
   display:grid;
-  grid-template-columns:repeat(4, 1fr);
-  grid-gap:20px;
-  grid-template-areas:'a b c d'
-  'e e e e'
-  'f f f f'
-  'g g h h'
-  'g g h h'
-  'i i i i'
-  'j j j j';
+  grid-template-columns:repeat(3,1fr);
+ 
+  grid-template-areas:'h h h'
+  'g c d';
 }
-#box1{
-  grid-area:a;
-  border:1px solid hsl(7,99%,75%);
+#values-h{
+  grid-area:h;
+  text-align:center;
+  clear:both;
+  margin-bottom:15px;
+}
+#gelato{
+  grid-area:g;
+  background-color:white;
   text-align:center;
 }
-#box2{
-  grid-area:b;
-  border:1px solid hsl(7,99%,75%);
-  text-align:center;
+#gelato img{
+  margin-top:10px;
+  margin-bottom:5px;
 }
-#box3{
+#gelato h2{
+  margin-bottom:5px;
+}
+
+#coffee{
   grid-area:c;
-  border:1px solid hsl(7,99%,75%);
   text-align:center;
+  background-color:rgb(249, 233, 213);
 }
-#box4{
+#coffee img{
+  margin-top:10px;
+  margin-bottom:5px;
+}
+#coffee h2{
+  margin-bottom:5px;
+}
+#comfort{
   grid-area:d;
-  border:1px solid hsl(7,99%,75%);
+  background-color:rgb(208, 237, 247);
   text-align:center;
 }
-span{
-  text-decoration: line-through;
+#comfort img{
+  margin-top:10px;
+  margin-bottom:5px;
 }
-#visit{
-  grid-area:e;
-  text-align:center;
+#comfort h2{
+  margin-bottom:5px;
 }
-#freepizza{
-  grid-area:f;
+#comfort h3{
+  margin-bottom:5px;
+  margin-left:3px;
+  margin-right:3px;
+}
+/*Styling quiz section*/
+#win{
   text-align:center;
   margin-top:10px;
   margin-bottom:10px;
 }
-#pfree{
-  grid-area:g;
-  font-size:20px;
-  margin-top:20px;
+#rules{
+  font-size:120%;
+  margin-left:15px;
+  margin-right:10px;
 }
-#woman{
-  grid-area:h;
-  height:350px;
+
+
+
+
+
+#contact-us a {
+  text-decoration: none;
+  color: black;
 }
-#game{
-  grid-area:j;
+
+#contact-us a:hover {
+  text-decoration: underline;
 }
-.title{
-  text-align:center;
+
+#contact-us {
+  text-align: center;
+  background-color: hsl(186,34%,77%);
+  width: 100%;
+  grid-area:k;
+}
+
+#contact-us li {
+  display: inline-block;
+  font-size: 20px;
+  margin-left: 20px;
 }

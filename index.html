@@ -11,151 +11,88 @@
 </head>
 
 <body>
-    <header>
-        <div id="logo">
-            <img src="assets/images/pizza.png" alt="pizza">
-        </div>
-        <nav id="navigation">
-            <ul>
-                <li><a href="#contact-us">Contact Us</a></li>
-                <li><a href="#freepizza">Free Pizza</a></li>
-                <li><a href="#ourmenu">Menu</a></li>
-                <li><a href="#ourvalues">Our Values</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div id="ourvalues">
-        <h2>Our Values</h2>
-        <div id="comfort">
-            <h3>Your Comfort</h3>
-            <p>We are passionate about giving you an opportunity to be comfortable in our restaurant by providing a dim
-                lighting and separated booths.</p>
-        </div>
-        <div id="dogs">
-            <h3>Dogs Are Welcome!</h3>
-            <p>It's important to be able to go to a restaurant with your pets, no matter the size.</p>
-        </div>
-        <div id="child">
-            <h3>Your Child's Happinness</h3>
-            <p>We have a playground where you child can hang out with their peers while waiting for food.</p>
-        </div>
-    </div>
-    <h2 class="menu" id="ourmenu">Our Menu</h2>
-    <section id="menu">
-        <div class="box-container">
-            <div id="box1">
-                <div class="image">
-                    <img src="assets/images/pepperoni1.webp" alt="pepperoni pizza">
-                </div>
-                <div class="content">
-                    <h4>Pepperoni</h4>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
+    <div id="grid-container">
+        <header>
+            <div id="logo">
+                <h1>AT POLIA'S</h1>
             </div>
-        </div>
-        <div class="box-container">
-            <div id="box2">
-                <div class="image">
-                    <img src="assets/images/hawaiian1.jpg" alt="hawaiian pizza">
-                </div>
-                <div class="content">
-                    <h4>Hawaiian</h4>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="price">$15.99 <span>$20.99</span></div>
+            <nav id="navigation">
+                <ul>
+                    <li><a href="#contact-us">Contact Us</a></li>
+                    <li><a href="#freegelato">Free Gelato</a></li>
+                    <li><a href="#ourvalues">Our Values</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="ourvalues">
+            <h1 id="values-h">Our Values</h1>
+            <div id="gelato">
+                <img src="assets/images/icecream.jpg" alt="gelato">
+                <h2>Our Gelato <i class="fa-solid fa-ice-cream"></i></h2>
+                <h3>Our gelato is made made from ethically sourced milk and provided by Scottish farmers.</h3>
             </div>
-        </div>
-        <div class="box-container">
-            <div id="box3">
-                <div class="image">
-                    <img src="assets/images/margherita.jpg" alt="margherita pizza">
-                </div>
-                <div class="content">
-                    <h4>Margherita</h4>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="price">$12.99 <span>$15.99</span></div>
+            <div id="coffee">
+                <img src="assets/images/coffee.jpg" alt="A cup of coffee">
+                <h2>Our Coffee <i class="fa-solid fa-mug-hot"></i></h2>
+                <h3>Our coffee comes to us straight from Colombia. Roasted with heavy flavour and ready to be used.
+                </h3>
             </div>
-        </div>
-        <div class="box-container">
-            <div id="box4">
-                <div class="image">
-                    <img src="assets/images/buffalo.jpg" alt="hawaiian pizza">
-                </div>
-                <div class="content">
-                    <h4>Buffalo</h4>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                </div>
-                <div class="price">$14.99 <span>$19.99</span></div>
+            <div id="comfort">
+                <img src="assets/images/dog.jpg" alt="A dog licking ice cream">
+                <h2>Your Comfort <i class="fa-solid fa-face-smile"></i></h2>
+                <h3>Your comfort is the most vaulable thing for us. We made our gelateria in a way that you
+                    would have your own space. And don't forget to bring your pets!</h3>
             </div>
-        </div>
-        <p id="visit">And much more! Give us a visit and see for yourself!</p>
-        </div>
-        <h2 id="freepizza">Free Pizza</h2>
-        <p id="pfree">We give out a free pizza of your choice (Pepperoni, Hawaiian, Margherita or Buffalo) to people who
-            win this game. You only have one chance to win. Don't waste it!</p>
-        <img src="assets/images/woman.jpg" alt="A woman eating pizza" id="woman">
-        <div id="game">
-            <section class="game">
-                <!--Title -->
-                <div class="title">Rock Paper Scissor</div>
-                 
-                  <!--Display Score of player and computer -->
-                <div class="score"> 
-                    <div class="playerScore">
-                        <h2>Player</h2>
-                        <p class="p-count count">0</p>
-         
-                    </div>      
-                    <div class="computerScore">
-                        <h2>Computer</h2>
-                        <p class="c-count count">0</p>
-         
-                    </div>
+        </section>
+        <section id="freegelato">
+            <h1 id="win">Win Free Gelato!</h2>
+            <h2 id="rules">We give you a chance to test your knowledge and possibly win a free large cup of gelato! The
+                rules are pretty simple. All you need to do is answer 10 questions about history of gelato and get your
+                prize if you answered at least 5 questions correctly. If you do it then a message and a redirection link
+                will pop up, the page will be your proof of win. Don't waste your chance because you have only 1. You will see some more rules when you start. Good
+                luck!</h2>
+        </section>
+        <section id="game">
+            <div id="start">
+                <button>Start Quiz!</button>
+            </div>
+            <div id="info-box">
+                <div id="info-title">
+                    <span>Some Rules of This Quiz</span>
                 </div>
-               
-                <div class="move">Choose your move</div>
-                <!--Number of moves left before game ends -->
-        <div class="movesleft">Moves Left: 10 </div>
-         
-        <!--Options available to player to play game -->
-      <div class="options">
-          <button class="rock">Rock</button>
-          <button class="paper">Paper</button>
-          <button class="scissor">Scissors</button>   
-      </div>
-       
-        <!--Final result of game -->
-      <div class="result"></div>
-        </div>
+                <div id="info-list">
+                    <div class="info">1. You will only have <span>15 seconds</span> per each question.</div>
+                    <div class="info">2. Once you select your answer, you can't reselect.</div>
+                    <div class="info">3. You can't select any item once time goes off.</div>
+                    <div class="info">4. You can't exit the quiz while playing.</div>
+                    <div class="info">5. You'll get points on the basis of your correct answers.</div>
+                </div>
+                <div class="buttons">
+                    <button id="quit">Exit</button>
+                    <button id="continue">Continue</button>
+                </div>
+            </div>
+        </section>
         <div id="contact-us">
+            <div>
+                <ul>
+                    <li><a href="http://facebook.com" target="_blank"
+                            aria-label="Contact us on Facebook(opens in a new tab)"><i
+                                class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="http://instagram.com" target="_blank"
+                            aria-label="Contact us on Instgram(opens in a new tab)"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="http://twitter.com" target="_blank"
+                            aria-label="Contact us on Twitter(opens in a new tab)"><i
+                                class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="http://gmail.com" target="_blank"
+                            aria-label="Contact us on Gmail(opens in a new tab)"><i
+                                class="fa-solid fa-envelope"></i></a></li>
+                </ul>
+            </div>
         </div>
         <script src="../assets/js/index.js"></script>
+    </div>
 </body>
 
 </html>
