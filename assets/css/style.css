@@ -230,7 +230,7 @@ img {
   background-color:rgb(6, 77, 99);
 }
 #quiz-box{
-  text-align: center;
+  display:none;
   width: 540px;
   background-color: white;
   border-radius: 5px;
@@ -239,7 +239,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 5px;
-  margin-top: 80px;
+  margin-top: 100px;
 }
 #quiz-box header{
   height:70px;
@@ -281,9 +281,123 @@ img {
   border-radius:5px;
   user-select: none;
 }
-
-
-
+#que-text{
+  font-size:25px;
+  font-weight:600;
+  margin-top:7px;
+  margin-bottom:15px;
+}
+.option{
+  background:rgb(208, 237, 247);
+  border:1px solid rgb(6, 112, 147);
+  border-radius:5px;
+  padding:8px 15px;
+  margin-bottom:15px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  cursor:pointer;
+  font-size:17px;
+}
+#quiz-box section{
+  margin-left:10px;
+  margin-right:10px;
+}
+.option:last-child{
+  margin-bottom:0px;
+}
+.option:hover{
+  color:white;
+  background-color:rgb(6, 112, 147);
+}
+.icon{
+  height:26px;
+  width:26px;
+  border:2px solid transparent;
+  border-radius:50%;
+  text-align:center;
+  font-size:13px;
+  line-height:24px;
+  pointer-events:none;
+}
+.check{
+  color:green;
+  border-color:green;
+}
+.times{
+  color:red;
+  border-color:red;
+}
+#quiz-box footer{
+  height:60px;
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+#total-que span{
+  display:flex;
+  user-select:none;
+}
+#total-que span p{
+  font-weight:500;
+  padding:0 5px;
+}
+#total-que span p:first-child{
+  padding-left:0px;
+}
+#next-btn{
+  height:40px;
+  padding:0 13px;
+  font-size:18px;
+  font-weight:400;
+  border:none;
+  outline:none;
+  background-color:rgb(6, 112, 147);
+  color:white;
+  border-radius:5px;
+  cursor:pointer;
+}
+#next-btn:hover{
+  background-color:rgb(6, 77, 99);
+}
+#result-box{
+  background-color:white;
+  position:relative;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  width:450px;
+  padding:25px 30px;
+  border-radius:5px;
+  display:flex;
+  align-items:center;
+  flex-direction:column;
+  justify-content:space-between;
+  text-align:center;
+  margin-top:50px;
+  pointer-events:none;
+  display:none;
+}
+#icon{
+  font-size:80px;
+  color:rgb(6, 112, 147);
+  margin-bottom:10px;
+}
+#complete-text{
+  font-size:20px;
+  font-weight:500;
+}
+#score-text span{
+  display:flex;
+  margin:10px 0;
+  font-size:18px;
+  font-weight:500;
+}
+#score-text span p{
+  font-weight:600;
+  padding:0 5px;
+}
 
 
 
